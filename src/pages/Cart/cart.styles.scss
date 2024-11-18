@@ -1,0 +1,46 @@
+.cart {
+    padding: 16px;
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+
+            span {
+                flex-grow: 1;
+            }
+
+            button {
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 8px 12px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: darkred;
+                }
+            }
+        }
+    }
+
+    div {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 16px;
+    }
+}

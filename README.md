@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# E-Commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple e-commerce application built with **React**, **Redux Toolkit**, and **SCSS**. This app fetches product data from the DummyJSON API and allows users to view and manage a shopping cart.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Product Listing**: Displays products with image, name, price, and description.
+- **Shopping Cart**: Add and remove products, view total price, and persist cart state.
+- **Responsive Design**: Fully responsive on desktop, tablet, and mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation Instructions
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/omarabdelaziz1020/E-Commerce-React.git
+cd your-repository-name
+```
 
-### `npm run build`
+### 2. Install Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have Node.js (LTS) installed, then run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Start the Development Server
 
-### `npm run eject`
+Run the following command to start the app:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app will be available at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 4. Build for Production (Optional)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Serve the production build:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install -g serve
+serve -s build
+```
+
+## Assumptions and Notes
+
+1. **Data Fetching**:
+
+   - The app fetches product data from the DummyJSON API (`https://dummyjson.com/products`) using server-side rendering (SSR).
+
+2. **State Management**:
+
+   - The shopping cart state is managed using **Redux Toolkit** for simplicity and scalability.
+
+3. **Styling**:
+   - SCSS is used for styling.
+
+```bash
+src/
+├── components/         # Reusable UI components (Header, ProductCard, etc.)
+├── pages/              # Application pages (Home, Cart)
+├── redux/              # Redux state management files (store, cartSlice)
+```
+
+## Author
+
+- **Omar Abdulaziz**
+- [GitHub Profile](https://github.com/omarabdelaziz1020)
